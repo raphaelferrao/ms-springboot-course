@@ -23,8 +23,8 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/workers")
 public class WorkerResource {
 	
-	@Value("${test.config}")
-	private String testConfig;
+//	@Value("${test.config}")
+//	private String testConfig;
 	
 	@Autowired
 	private Environment env;
@@ -34,7 +34,7 @@ public class WorkerResource {
 	
 	@GetMapping("/configs")
 	public ResponseEntity<Void> getConfigs(){
-		log.info("testConfig = {}", testConfig);
+//		log.info("testConfig = {}", testConfig);
 		return ResponseEntity.noContent().build();
 	}
 	

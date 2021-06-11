@@ -36,7 +36,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 	private static final String[] ROLE_OPERATOR_URLS = { "/hr-worker/**" };
 	
 	private static final String[] ROLE_ADMIN_URLS = { "/hr-payroll/**", "/hr-user/**", "/actuator/**",
-			"/hr-worker/actuator/**", "/hr-oauth/actuator/**"};
+			"/hr-worker/actuator/**", "/hr-oauth/actuator/**", "/hr-user/actuator/**"};
 	
 	@Autowired
 	private JwtTokenStore tokenStore;
